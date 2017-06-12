@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/walking_navi"
+        android:title="步行导航"/>
+
+    <item android:id="@+id/biking_navi"
+        android:title="骑行导航"
+        />
+
+</menu>

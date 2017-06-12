@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_Username"
+        style="@style/AppTheme.EditText.Big"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_above="@+id/et_Password"
+        android:layout_marginBottom="@dimen/dp_14"
+        android:layout_marginLeft="@dimen/dp_55"
+        android:layout_marginRight="@dimen/dp_55"
+        android:drawableLeft="@drawable/selector_ic_person"
+        android:hint="@string/username" />
+
+    <EditText
+        android:id="@+id/et_Password"
+        style="@style/AppTheme.EditText.Big"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_above="@+id/et_Confirm"
+        android:layout_marginBottom="@dimen/dp_14"
+        android:layout_marginLeft="@dimen/dp_55"
+        android:layout_marginRight="@dimen/dp_55"
+        android:drawableLeft="@drawable/selector_ic_lock"
+        android:hint="@string/please_enter_password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/et_Confirm"
+        style="@style/AppTheme.EditText.Big"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_above="@+id/btn_Register"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_55"
+        android:layout_marginRight="@dimen/dp_55"
+        android:drawableLeft="@drawable/selector_ic_lock_outline"
+        android:hint="@string/please_confirm_password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_Register"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_200"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_50"
+        android:enabled="false"
+        android:text="@string/register"
+        android:textSize="@dimen/sp_16" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:src="@mipmap/screen_bottom_line" />
+
+
+</RelativeLayout>

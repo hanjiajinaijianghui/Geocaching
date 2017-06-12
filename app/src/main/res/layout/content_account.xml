@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:background="@mipmap/bg_world"
+        android:orientation="vertical">
+
+        <!--圆形头像-->
+        <!--
+        <com.pkmmte.view.CircularImageView
+            android:id="@+id/iv_userIcon"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/user_icon"
+            app:border="true"
+            app:border_color="#16f5f5f5"
+            app:border_width="@dimen/dp_8"
+            app:layout_collapseMode="parallax"
+            app:layout_collapseParallaxMultiplier="-1"
+            app:shadow="false"
+            app:selector="true"
+            app:selector_color="#4D000000"
+            app:selector_stroke_width="@dimen/dp_8"
+            app:selector_stroke_color="#16f5f5f5"/>
+        -->
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textSize="@dimen/sp_16"
+            android:text="@string/treasure_expert"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="33dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        android:background="@drawable/selector_list_item_bg"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_account_circle"
+            android:text="@string/username"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/dp_8"
+            android:textSize="@dimen/sp_16"/>
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/right_arrow"
+            android:text="@string/treasure_expert"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical|right"
+            android:drawablePadding="@dimen/dp_8"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:scaleType="fitXY"
+        android:src="@mipmap/divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        android:background="@drawable/selector_list_item_bg"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_lock_white"
+            android:text="@string/password"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/dp_8"
+            android:textSize="@dimen/sp_16"/>
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/right_arrow"
+            android:text="@string/fake_password"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical|right"
+            android:drawablePadding="@dimen/dp_8"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:scaleType="fitXY"
+        android:src="@mipmap/divider_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        android:background="@drawable/selector_list_item_bg"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_autorenew"
+            android:text="@string/version_update"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/dp_8"
+            android:textSize="@dimen/sp_16"/>
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/right_arrow"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical|right"
+            android:drawablePadding="@dimen/dp_8"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:scaleType="fitXY"
+        android:src="@mipmap/divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        android:background="@drawable/selector_list_item_bg"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_return"
+            android:text="@string/log_out"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/dp_8"
+            android:textSize="@dimen/sp_16"/>
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/right_arrow"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical|right"
+            android:drawablePadding="@dimen/dp_8"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:scaleType="fitXY"
+        android:src="@mipmap/divider_line" />
+
+</LinearLayout>

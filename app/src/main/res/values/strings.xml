@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">地理寻宝</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="account">我的账号</string>
+    <string name="username">账号</string>
+    <string name="password">密码</string>
+    <string name="please_enter_password">请填写密码</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="OK">确定</string>
+    <string name="password_rules">密码为字母、数字或下划线，长度在6~18之间</string>
+    <string name="username_rules">账号为中文，字母或数字，长度为4~20，一个中文算2个长度</string>
+    <string name="username_error">账号错误</string>
+    <string name="password_error">密码错误</string>
+    <string name="please_confirm_password">请确认密码</string>
+    <string name="located">定位</string>
+    <string name="satellite">卫星</string>
+    <string name="compass">指南</string>
+    <string name="locate_not_success">定位未成功</string>
+    <string name="unknown">未知</string>
+    <string name="hide_here">藏在这里</string>
+    <string name="hide_treasure">埋藏宝藏</string>
+    <string name="my_list">我的列表</string>
+    <string name="about_help">帮  助</string>
+    <string name="log_out">退  出</string>
+    <string name="treasure_expert">寻宝达人</string>
+    <string name="version_update">版本更新</string>
+    <string name="cancel">取消</string>
+    <string name="add_from_gallery">通过相册添加</string>
+    <string name="camera">相机</string>
+    <string name="action_toggle">切换</string>
+    <string name="start_point">起点</string>
+    <string name="end_point">终点</string>
+    <string name="treasure_title">宝藏标题</string>
+    <string name="current_location_default">当前位置：</string>
+    <string name="current_location">当前位置：%s</string>
+
+    <string name="treasure_images">宝物信息图</string>
+    <string name="treasure_size">宝物大小</string>
+    <string name="treasure_level">寻宝难度</string>
+
+    <!--<string name="size_small">较小</string>-->
+    <string name="size_middle">中等</string>
+    <!--<string name="size_big">较大</string>-->
+
+    <!--<string name="level_easy">容易</string>-->
+    <string name="level_normal">普通</string>
+    <!--<string name="level_hard">困难</string>-->
+
+    <string name="not_choose">未选择</string>
+    <string name="please_input_description">请对宝物信息进行描述</string>
+
+    <string name="please_input_title">请输入宝藏标题</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="fake_password">********</string>
+    <string name="zero">0</string>
+
+    <string name="treasure_details">宝物详情</string>
+    <string name="treasure_type">宝物类型</string>
+    <string name="level_easy">容易</string>
+    <string name="type_traditional">传统</string>
+
+    <string name="size_small">小</string>
+    <string name="size_normal">中</string>
+    <string name="size_big">大</string>
+    <string name="find_treasure">找到宝藏</string>
+    <string name="navigation">开始导航</string>
+</resources>

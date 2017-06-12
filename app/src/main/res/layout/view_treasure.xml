@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    android:layout_marginStart="6dp"
+    android:layout_marginEnd="6dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:id="@+id/cardView"
+    tools:ignore="RtlHardCoded"
+    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp">
+
+        <ImageView
+            tools:ignore="ContentDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/treasure_icon"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/treasure_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/treasure_icon"
+            android:layout_toRightOf="@+id/treasure_icon"
+            android:layout_toEndOf="@+id/treasure_icon"
+            android:layout_toLeftOf="@+id/iv_arrow"
+            android:layout_toStartOf="@+id/iv_arrow"
+            android:id="@+id/linear_title"
+            android:layout_marginLeft="14dp">
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/tv_treasureTitle"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_16"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:drawableLeft="@mipmap/ic_love"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/colorTextHint"
+                android:drawablePadding="@dimen/dp_4"
+                android:gravity="center_vertical"/>
+
+            <Space
+                android:layout_width="@dimen/dp_6"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unknown"
+                android:drawableLeft="@mipmap/icon_distance"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/colorTextHint"
+                android:drawablePadding="@dimen/dp_4"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_treasureLocation"
+            android:layout_below="@+id/linear_title"
+            android:layout_alignLeft="@+id/linear_title"
+            android:layout_alignStart="@+id/linear_title"
+            android:layout_toLeftOf="@+id/iv_arrow"
+            android:layout_toStartOf="@+id/iv_arrow"
+            android:textColor="@color/colorTextHint"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:textSize="@dimen/sp_12"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_arrow_right"
+            android:layout_marginRight="10dp"
+            android:tint="#c7b39d"
+            android:id="@+id/iv_arrow"
+            tools:ignore="ContentDescription"
+            android:paddingLeft="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_6"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+

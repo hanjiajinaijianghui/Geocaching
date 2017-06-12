@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.zhuoxin.hjj.geocaching.fragment.MainFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="match_parent"/>
+        <!--使用的Widget.AppCompat.Button主题，解决选择器问题-->
+        <Button
+            android:id="@+id/btn_Register"
+            android:layout_width="0px"
+            android:layout_height="@dimen/dp_60"
+            android:layout_weight="1"
+            android:text="@string/register"
+            android:textSize="16sp"
+            android:theme="@style/AppTheme.Button.Transparent"
+            />
+
+        <Space
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="match_parent"/>
+
+        <!--使用的Widget.AppCompat.Button主题，解决选择器问题-->
+        <Button
+            android:id="@+id/btn_Login"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0px"
+            android:layout_height="@dimen/dp_60"
+            android:layout_weight="1"
+            android:text="@string/login"
+            android:textSize="16sp"/>
+
+        <Space
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

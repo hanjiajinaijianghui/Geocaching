@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:id="@+id/cardView"
+        tools:ignore="RtlHardCoded"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tv_currentLocation"
+                android:layout_width="@dimen/dp_300"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:text="@string/current_location_default"
+                android:layout_marginTop="@dimen/dp_2"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_14"/>
+
+            <ImageView
+                android:id="@+id/iv_toTreasureInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_arrow_right"
+                android:layout_marginRight="@dimen/dp_10"
+                android:tint="#c7b39d"/>
+
+            <EditText
+                android:id="@+id/et_treasureTitle"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:background="@mipmap/edit_bg_long"
+                android:layout_toLeftOf="@+id/iv_toTreasureInfo"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_below="@+id/tv_currentLocation"
+                android:layout_marginTop="@dimen/dp_2"
+                android:hint="@string/treasure_title"
+                android:textColorHint="@color/colorTextHint"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_16"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+

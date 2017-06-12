@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/map_frame"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--地图上的藏宝操作按钮,默认应该是gone的-->
+    <!--android:visibility="gone"-->
+    <RelativeLayout
+        android:id="@+id/centerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <Space
+            android:id="@+id/center"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/iv_located"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/center"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/treasure_located"/>
+
+        <Button
+            android:id="@+id/btn_HideHere"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/iv_located"
+            android:layout_centerHorizontal="true"
+            android:text="@string/hide_here"/>
+    </RelativeLayout>
+
+    <!--地图控制(定位，卫星，指南)-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_200">
+            <!--地图缩放-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ll_locationBar"
+                android:layout_alignEnd="@+id/ll_locationBar"
+                android:layout_alignRight="@+id/ll_locationBar"
+                android:layout_marginBottom="@dimen/dp_30"
+                android:background="@mipmap/scale_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_scaleUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/scale_up"/>
+
+                <ImageView
+                    android:id="@+id/iv_scaleDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/scale_down"/>
+            </LinearLayout>
+            <!--定位，卫星，指南-->
+            <LinearLayout
+                android:id="@+id/ll_locationBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:background="@mipmap/location_bar_bg">
+
+                <TextView
+                    android:id="@+id/tv_located"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/ic_located"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:paddingRight="@dimen/dp_20"
+                    android:text="@string/located"/>
+
+                <TextView
+                    android:id="@+id/tv_satellite"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/ic_satellite"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:paddingRight="@dimen/dp_20"
+                    android:text="@string/satellite"/>
+
+                <TextView
+                    android:id="@+id/tv_compass"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/ic_compass"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:paddingRight="@dimen/dp_20"
+                    android:text="@string/compass"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <!--用来显示宝藏信息的fragment-->
+        <!--android:visibility="gone"-->
+
+        <FrameLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"
+            android:visibility="gone">
+            <!--用来显示宝藏信息的卡片(选中藏宝时)-->
+            <!--<com.feicuiedu.hunttreasure.custom.TreasureView-->
+            <!--android:id="@+id/treasureView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center"></com.feicuiedu.hunttreasure.custom.TreasureView>-->
+
+            <!--用来录入宝藏信息的卡片(藏宝时)-->
+            <include
+                android:id="@+id/hide_treasure"
+                layout="@layout/hide_treasure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

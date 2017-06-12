@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#413839</color>
+    <color name="colorPrimaryDark">#413839</color>
+    <color name="colorAccent">#22BED2</color>
+
+    <color name="colorDrawerBackground">#92643d</color>
+    <color name="colorTextHint">#bb9a82</color>
+
+
+    <color name="transparent_btn_bg">#4DDAFBF5</color>
+    <color name="text_color_white">#FFFFFFFF</color>
+    <color name="text_color_hint">#bb9a82</color>
+</resources>
