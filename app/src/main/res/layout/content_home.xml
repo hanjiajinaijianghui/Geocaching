@@ -25,6 +25,7 @@
     <!--地图视图的宝藏-->
     <fragment
         android:id="@+id/mapFragment"
+        android:name="com.zhuoxin.hjj.geocaching.treasure.map.MapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/toolbar" />

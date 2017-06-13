@@ -39,6 +39,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         if (getSupportActionBar() != null) {
             //不显示默认标题
             getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+            getSupportActionBar().setTitle("");
         }
 
         //DrawerLayout的侧滑监听，展示控制开关的图标

@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/map_frame"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
 
     <!--地图上的藏宝操作按钮,默认应该是gone的-->
     <!--android:visibility="gone"-->
@@ -18,7 +22,7 @@
             android:id="@+id/center"
             android:layout_width="0px"
             android:layout_height="0px"
-            android:layout_centerInParent="true"/>
+            android:layout_centerInParent="true" />
 
         <ImageView
             android:id="@+id/iv_located"
@@ -26,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/center"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/treasure_located"/>
+            android:src="@drawable/treasure_located" />
 
         <Button
             android:id="@+id/btn_HideHere"
@@ -35,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/iv_located"
             android:layout_centerHorizontal="true"
-            android:text="@string/hide_here"/>
+            android:text="@string/hide_here" />
     </RelativeLayout>
 
     <!--地图控制(定位，卫星，指南)-->
@@ -63,10 +67,10 @@
                     android:id="@+id/iv_scaleUp"
                     android:layout_width="match_parent"
                     android:layout_height="0px"
-                    android:layout_weight="1"
                     android:layout_gravity="center"
+                    android:layout_weight="1"
                     android:scaleType="centerInside"
-                    android:src="@mipmap/scale_up"/>
+                    android:src="@mipmap/scale_up" />
 
                 <ImageView
                     android:id="@+id/iv_scaleDown"
@@ -75,7 +79,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:scaleType="centerInside"
-                    android:src="@mipmap/scale_down"/>
+                    android:src="@mipmap/scale_down" />
             </LinearLayout>
             <!--定位，卫星，指南-->
             <LinearLayout
@@ -96,7 +100,7 @@
                     android:gravity="center"
                     android:paddingLeft="@dimen/dp_20"
                     android:paddingRight="@dimen/dp_20"
-                    android:text="@string/located"/>
+                    android:text="@string/located" />
 
                 <TextView
                     android:id="@+id/tv_satellite"
@@ -107,7 +111,7 @@
                     android:gravity="center"
                     android:paddingLeft="@dimen/dp_20"
                     android:paddingRight="@dimen/dp_20"
-                    android:text="@string/satellite"/>
+                    android:text="@string/satellite" />
 
                 <TextView
                     android:id="@+id/tv_compass"
@@ -118,7 +122,7 @@
                     android:gravity="center"
                     android:paddingLeft="@dimen/dp_20"
                     android:paddingRight="@dimen/dp_20"
-                    android:text="@string/compass"/>
+                    android:text="@string/compass" />
             </LinearLayout>
 
         </RelativeLayout>
@@ -135,7 +139,9 @@
             <!--android:id="@+id/treasureView"-->
             <!--android:layout_width="match_parent"-->
             <!--android:layout_height="match_parent"-->
-            <!--android:layout_gravity="center"></com.feicuiedu.hunttreasure.custom.TreasureView>-->
+            <!--android:layout_gravity="center">-->
+            <!---->
+            <!--</com.feicuiedu.hunttreasure.custom.TreasureView>-->
 
             <!--用来录入宝藏信息的卡片(藏宝时)-->
             <include
@@ -144,7 +150,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:visibility="gone"/>
+                android:visibility="gone" />
         </FrameLayout>
 
     </LinearLayout>

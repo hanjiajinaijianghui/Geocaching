@@ -2,6 +2,8 @@ package com.zhuoxin.hjj.geocaching;
 
 import android.app.Application;
 
+
+import com.baidu.mapapi.SDKInitializer;
 import com.zhuoxin.hjj.geocaching.user.UserPrefs;
 
 /**
@@ -14,5 +16,6 @@ public class TreasureApplication extends Application {
     public void onCreate() {
         super.onCreate();
         UserPrefs.init(this);
+        SDKInitializer.initialize(getApplicationContext());
     }
 }
